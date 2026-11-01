@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(208, 209, 209);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+}
+
+.subscription {
+    font-weight: 700;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 20px;
+    background-color: rgb(145, 204, 255);
+    color: black;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(89, 151, 151);
+    transform: translateY(-3px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .hobbies {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
